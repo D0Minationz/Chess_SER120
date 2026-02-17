@@ -35,12 +35,27 @@ public class App {
 			//~ }
 		//~ }
 
-        Scanner myScanner = new Scanner(System.in);
-        System.out.println("Which piece do you want to move (Ex: A1)");
-        String userInput = myScanner.next();
-        System.out.println("Where do you want to move your piece? (Ex: A3)");
-        gm.runGame();
-        
-        System.out.println("--- Session Ended ---");
+       gm.runGame();
+
+        while(true){
+            Scanner myScanner = new Scanner(System.in);
+            System.out.print("Which piece do you want to move? (Ex: A1) ");
+            String userMove = myScanner.next();
+            System.out.print("Where do you want to move that piece? (Ex: A2) ");
+            String userPlace = myScanner.next();
+
+            gm.runGame();
+
+            System.out.print("Do you want to keep playing or exit? ");
+            String userEnd = myScanner.next();
+            if(userEnd.equals("exit")){
+                System.out.println("Goodbye");
+                System.out.println("--- Session Ended ---");
+                gm.runGame();
+                System.exit(1);
+            }else{
+                gm.runGame();
+            }
+        }
     }
 }
