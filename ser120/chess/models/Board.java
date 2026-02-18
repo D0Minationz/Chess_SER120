@@ -37,6 +37,8 @@ public class Board {
 
 	        printHorizontalDivider();
 	    }
+
+		
 	}
 
 	private void printHorizontalDivider() {

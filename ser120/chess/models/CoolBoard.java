@@ -20,7 +20,7 @@ public class CoolBoard extends Board {
             for (int j = 0; j < 8; j++) {
                 String background = ((i + j) % 2 == 0) ? GREEN_BG : BLACK_BG;
                 
-                String piece = "--";
+                String piece = this.getBoardData()[i][j];
                 
                 System.out.print(background + " " + piece + " " + RESET);
                 

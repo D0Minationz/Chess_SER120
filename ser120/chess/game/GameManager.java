@@ -1,12 +1,12 @@
 package ser120.chess.game;
 
-import ser120.chess.models.Board;
+import ser120.chess.models.CoolBoard;
 
 public class GameManager {
-	private Board board;
+	private CoolBoard board;
 	
 	public GameManager(){
-		this.board = new Board(8,8);
+		this.board = new CoolBoard(8,8);
 	}
 	
 	public void runGame(){
@@ -16,7 +16,7 @@ public class GameManager {
 	
 	}
 	
-	public Board getBoard(){
+	public CoolBoard getBoard(){
 		return board;
 	}
 	
