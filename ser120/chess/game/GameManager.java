@@ -1,7 +1,6 @@
 package ser120.chess.game;
 
 import ser120.chess.models.Board;
-import ser120.chess.models.CoolBoard;
 
 public class GameManager {
 	private Board board;
