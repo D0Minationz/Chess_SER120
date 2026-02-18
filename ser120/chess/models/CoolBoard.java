@@ -14,7 +14,7 @@ public class CoolBoard extends Board {
     }
 
     public void showBoard() {
-        System.out.println(YELLOW_TEXT + "\n=== â™› CHESS ADVENTURE BOARD â™› ===" + RESET);
+        System.out.println(YELLOW_TEXT + "\n==== CHESS ADVENTURE BOARD =====" + RESET);
         
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {

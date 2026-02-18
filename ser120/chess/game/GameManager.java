@@ -12,7 +12,7 @@ public class GameManager {
 	public void runGame(){
 		System.out.println("GameManager: Initializing engine...");
         board.showBoard();
-        System.out.println("GameManager: Ready for White's move.");
+        System.out.println("GameManager: Ready for Green's move.");
 	
 	}
 	
