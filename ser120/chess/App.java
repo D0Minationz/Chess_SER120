@@ -26,7 +26,7 @@ public class App {
         
         String[][] boardData = gm.getBoard().getBoardData();
 		
-		boardData[0][0] = "r";
+		boardData[0][0] = "r ";
 		
 		
 		//~ for (int i = 0; i < 8; i++) {
